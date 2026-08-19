@@ -4,10 +4,6 @@ An AWS-based security monitoring and alerting system designed to detect
 suspicious authentication and API-related activity and generate automated
 security notifications.
 
-## Architecture
-
-![AWS Cloud Security Monitoring Architecture](architecture/aws-security-monitoring-architecture.png)
-
 ## Project Overview
 
 This project demonstrates how security events from an Ubuntu EC2 instance
