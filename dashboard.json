@@ -1,0 +1,52 @@
+{
+    "widgets": [
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "SecurityMonitoring", "SSHFailedPasswordAttempts", { "region": "us-east-1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "SecurityMonitoring", "SSHInvalidUserAttempts", { "region": "us-east-1" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "type": "alarm",
+            "x": 12,
+            "y": 0,
+            "width": 12,
+            "height": 2,
+            "properties": {
+                "title": "",
+                "alarms": [
+                    "arn:aws:cloudwatch:us-east-1:316771619816:alarm:SSHFailedPasswordAlarm",
+                    "arn:aws:cloudwatch:us-east-1:316771619816:alarm:SSHInvalidUserAlarm"
+                ]
+            }
+        }
+    ]
+}
